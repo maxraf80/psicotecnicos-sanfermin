@@ -68,7 +68,7 @@ body {
 --------------------------- */
 .boton-llamar {
   display: inline-block;
-  margin: 1em 0 0 4.5em; /* Se mantiene igual para escritorio */
+  margin: 1em 0 0 4.5em;
   padding: 10px 18px;
   background-color: #e3a426;
   color: #fff;
@@ -77,40 +77,13 @@ body {
   font-weight: 600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.25s ease;
+  display: block;      /* Cambia a bloque para permitir centrado */
+  margin: 1em auto;    /* Elimina el 4.5em y centra automáticamente */
+  width: fit-content;  /* Evita que ocupe todo el ancho */
+  text-align: center;
 }
 .boton-llamar:hover {
   background-color: #218838;
-}
-
-/* ... (resto del código igual) ... */
-
-/* --------------------------
-   🔹 MEDIA QUERIES
---------------------------- */
-@media (max-width: 480px) {
-  /* LINEAS MODIFICADAS PARA EL BOTÓN */
-  .boton-llamar {
-    display: block;      /* Cambia a bloque para permitir centrado */
-    margin: 1em auto;    /* Elimina el 4.5em y centra automáticamente */
-    width: fit-content;  /* Evita que ocupe todo el ancho */
-    text-align: center;
-  }
-
-  body {
-    justify-content: center;
-    align-items: center;
-  }
-  .menu {
-    width: 90%;
-    text-align: center;
-  }
-  .menu a {
-    display: inline-block;
-  }
-  .col-title h1,
-  .col-title p {
-    display: none;
-  }
 }
 
 /* --------------------------
