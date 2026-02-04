@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Psicotécnicos San Fermín | Centro Médico Emedical en Madrid</title>
@@ -11,15 +12,13 @@
   <!-- SEO -->
   <meta name="description"
     content="Centro médico Emedical en San Fermín (Madrid). Psicotécnicos oficiales para seguridad privada, armas, náutica y perros peligrosos. Sin cita previa, rápido y económico.">
-  <meta name="keywords"
-    content="psicotécnico San Fermín, psicotécnico Madrid, reconocimiento médico Madrid, certificado médico armas, psicotécnico seguridad privada, psicotécnico náutica, psicotécnico perros peligrosos, centro médico Usera, centro psicotécnico DGT Madrid">
   <meta name="author" content="Desyunos Web Services">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.psicotecnicos-sanfermin.com/">
 
-  <!-- Open Graph (Redes sociales) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Psicotécnicos San Fermín | Centro Médico Emedical Madrid">
   <meta property="og:description"
     content="Centro médico especializado en psicotécnicos oficiales en Madrid (San Fermín/Usera). Sin cita previa, rápido y económico.">
@@ -27,11 +26,16 @@
   <meta property="og:url" content="https://www.psicotecnicos-sanfermin.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Psicotécnicos San Fermín">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
 
   <!-- CSS -->
+  <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Google Fonts -->
@@ -48,18 +52,16 @@
     "@type": "MedicalClinic",
     "@id": "https://www.psicotecnicos-sanfermin.com/#clinic",
     "name": "Psicotécnicos San Fermín - Emedical Madrid",
-    "alternateName": "Centro Psicotécnico Emedical Madrid",
     "image": "https://www.psicotecnicos-sanfermin.com/resources/logo-emedical.png",
     "url": "https://www.psicotecnicos-sanfermin.com/",
-    "telephone": "+34 613000030",
+    "telephone": "+34613000030",
     "priceRange": "€",
-    "description": "Centro médico especializado en reconocimientos y psicotécnicos oficiales para vigilantes de seguridad, armas, náutica y perros peligrosos en Madrid.",
+    "description": "Centro médico especializado en reconocimientos y psicotécnicos oficiales en Madrid.",
     "medicalSpecialty": ["OccupationalMedicine", "Psychology"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Calle de la Mezquita 5",
       "addressLocality": "Madrid",
-      "addressRegion": "Madrid",
       "postalCode": "28041",
       "addressCountry": "ES"
     },
@@ -68,11 +70,7 @@
       "latitude": 40.367862,
       "longitude": -3.696974
     },
-    "areaServed": ["Madrid", "Usera", "San Fermín", "Carabanchel", "Villaverde", "Aluche"],
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:30"},
-      {"@type": "OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"20:30"}
-    ],
+    "openingHours": "Mo-Fr 10:00-13:30,16:00-20:30",
     "sameAs": [
       "https://www.instagram.com/emedicalmadrid",
       "https://www.facebook.com/emedicalmadrid"
@@ -87,94 +85,143 @@
 
 <body>
 
-  <header class="header-container">
-    <div class="col-logo">
-      <a href="index.html">
-        <img src="resources/logo-emedical.png" alt="Psicotécnicos San Fermín - Emedical Madrid">
-      </a>
-    </div>
+<header class="header-container">
 
-    <div class="col-title">
-      <h1>Psicotécnicos San Fermín</h1>
-      <p class="texto-encabezado">Emedical Madrid: Reconocimientos médicos oficiales para seguridad, armas, perros
-        peligrosos y náutica.</p>
-
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="psicotecnicos.html">Psicotécnicos y certificados</a></li>
-          <li><a href="citas.html">Pide una cita</a></li>
-        </ul>
-      </nav>
-
-      <a href="tel:613000030" class="boton-llamar">📞 Llámanos al 613 0000 30</a>
-    </div>
-  </header>
-
-  <section class="fila">
-    <div class="col-2">
-      <section>
-        <h2>Psicotécnicos en San Fermín para seguridad, armas y embarcaciones</h2>
-        <p>En <strong>Psicotécnicos San Fermín (Emedical)</strong> realizamos tu <strong>psicotécnico oficial</strong>
-          de forma rápida y sin esperas. En una sola visita completamos el proceso: test, foto, firma digital y
-          <strong>entrega inmediata del certificado</strong>.
-        </p>
-
-        <img src="resources/ventana.jpeg" alt="Centro médico Emedical Madrid en San Fermín"
-          style="width:100%; margin: 20px 0; border-radius:8px;">
-
-        <h3>Nuestros Servicios de Certificados Oficiales</h3>
-        <ul>
-          <li><strong>Vigilantes de Seguridad:</strong> Obtención y renovación para seguridad privada.</li>
-          <li><strong>Permiso de Armas:</strong> Licencias A, B, C, D, E y F para la Guardia Civil.</li>
-          <li><strong>Patrón de Embarcación:</strong> PNB, PER y otras titulaciones náuticas.</li>
-          <li><strong>Perros Potencialmente Peligrosos (PPP):</strong> Certificado médico obligatorio de aptitud.</li>
-        </ul>
-
-        <img src="resources/Perro.jpg" alt="Evaluación psicotécnica para perros peligrosos en Madrid"
-          style="width:100%; margin: 15px 0; border-radius:8px;">
-
-        <p>Tu <strong>psicotécnico en San Fermín</strong> rápido y profesional. Somos un centro autorizado con amplia
-          experiencia en el sector.</p>
-      </section>
-    </div>
-  </section>
-
-  <footer id="contact" class="fila">
-    <div class="contacto">
-      <h3>Contacta con nosotros</h3>
-      <p>Solicita tu <a href="citas.html" style="font-weight:bold; text-decoration: underline;">cita</a> o visítanos
-        directamente.</p>
-      <p>Teléfono: <a href="tel:+34613000030">+34 613 000 030</a></p>
-      <p><a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid" target="_blank"
-          rel="noopener noreferrer">Dirección: Calle de la Mezquita 5, 28041, Madrid (San Fermín)</a></p>
-    </div>
-    <!-- Botón WhatsApp -->
-    <a class="wa-button wa-link" href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">
-      <img src="resources/whatsapp.png" alt="WhatsApp">
+  <div class="col-logo">
+    <a href="/">
+      <img src="resources/logo-emedical.png"
+           alt="Psicotécnicos San Fermín - Centro médico Emedical Madrid"
+           width="220"
+           height="80"
+           loading="eager">
     </a>
-
-    <!-- Botón Telegram -->
-    <a class="tg-button" href="https://t.me/+34613000030" target="_blank" rel="noopener noreferrer">
-      <img src="resources/Telegram_logo.svg" alt="Telegram">
-    </a>
-
-  </footer>
-
-  <!-- DISCLAIMER -->
-  <div class="disclaimer" role="contentinfo" aria-label="Aviso legal">
-    <p>
-      Aviso: Para comprender con el RGPD (Reglamento General de Protección de Datos) y entender que tus datos
-      están
-      seguros, debes leer y la política de <a href="privacidad.html">PRIVACIDAD</a> y los <a
-        href="aviso-legal.html">AVISOS LEGALES</a>.
-      Esta web cumple con el RGPD, así que todo está protegido y amparado por la ley. El uso de la web implica la
-      aceptación
-      de las condiciones expuestas en el aviso legal y la política de privacidad.
-      Esta web NO USA COOKIES.
-    </p>
   </div>
 
-</body>
+  <div class="col-title">
 
+    <h1>Psicotécnicos San Fermín</h1>
+
+    <p class="texto-encabezado">
+      Emedical Madrid: Reconocimientos médicos oficiales para seguridad, armas, perros peligrosos y náutica.
+    </p>
+
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="psicotecnicos.html">Psicotécnicos y certificados</a></li>
+        <li><a href="citas.html">Pide una cita</a></li>
+      </ul>
+    </nav>
+
+    <a href="tel:+34613000030" class="boton-llamar">
+      📞 Llámanos al 613 000 030
+    </a>
+
+  </div>
+
+</header>
+
+<main>
+
+<section class="fila">
+
+  <div class="col-2">
+
+    <article>
+
+      <h2>Psicotécnicos en San Fermín para seguridad, armas y embarcaciones</h2>
+
+      <p>
+        En <strong>Psicotécnicos San Fermín (Emedical)</strong> realizamos tu
+        <strong>psicotécnico oficial</strong> de forma rápida y sin esperas.
+        En una sola visita completamos el proceso: test, foto, firma digital y
+        <strong>entrega inmediata del certificado</strong>.
+      </p>
+
+      <img src="resources/ventana.jpeg"
+           alt="Centro médico Emedical en San Fermín Madrid"
+           loading="lazy"
+           width="900"
+           height="500"
+           style="width:100%; margin:20px 0; border-radius:8px;">
+
+      <h3>Nuestros servicios de certificados oficiales</h3>
+
+      <ul>
+        <li><strong>Vigilantes de Seguridad:</strong> Obtención y renovación.</li>
+        <li><strong>Permiso de Armas:</strong> Licencias A, B, C, D, E y F.</li>
+        <li><strong>Patrón de Embarcación:</strong> PNB, PER y titulaciones náuticas.</li>
+        <li><strong>Perros PPP:</strong> Certificado médico obligatorio.</li>
+      </ul>
+
+      <img src="resources/Perro.jpg"
+           alt="Evaluación psicotécnica para perros potencialmente peligrosos en Madrid"
+           loading="lazy"
+           width="900"
+           height="500"
+           style="width:100%; margin:15px 0; border-radius:8px;">
+
+      <p>
+        Tu <strong>psicotécnico en San Fermín</strong> rápido y profesional.
+        Centro autorizado con amplia experiencia.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer id="contact" class="fila">
+
+  <div class="contacto">
+
+    <h3>Contacta con nosotros</h3>
+
+    <p>
+      Solicita tu <a href="citas.html"><strong>cita</strong></a> o visítanos directamente.
+    </p>
+
+    <p>
+      Teléfono: <a href="tel:+34613000030">+34 613 000 030</a>
+    </p>
+
+    <p>
+      <a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid"
+         target="_blank"
+         rel="noopener noreferrer">
+         Calle de la Mezquita 5, 28041, Madrid (San Fermín)
+      </a>
+    </p>
+
+  </div>
+
+  <a class="wa-button wa-link"
+     href="https://wa.me/34613000030"
+     target="_blank"
+     rel="noopener noreferrer">
+    <img src="resources/whatsapp.png" alt="Contactar por WhatsApp" loading="lazy">
+  </a>
+
+  <a class="tg-button"
+     href="https://t.me/+34613000030"
+     target="_blank"
+     rel="noopener noreferrer">
+    <img src="resources/Telegram_logo.svg" alt="Contactar por Telegram" loading="lazy">
+  </a>
+
+</footer>
+
+<div class="disclaimer" role="contentinfo" aria-label="Aviso legal">
+  <p>
+    Para cumplir con el RGPD debes leer la
+    <a href="privacidad.html">política de privacidad</a>
+    y el <a href="aviso-legal.html">aviso legal</a>.
+    Esta web no utiliza cookies.
+  </p>
+</div>
+
+</body>
 </html>
