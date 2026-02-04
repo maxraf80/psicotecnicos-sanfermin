@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.psicotecnicos-sanfermin.com/sitemap.xml
