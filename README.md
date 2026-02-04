@@ -1,2 +1,0 @@
-# psicotecnicos-sanfermin
-
