@@ -34,47 +34,51 @@ content="Centro autorizado para psicotécnicos en Madrid. Seguridad privada, arm
 <!-- Schema Servicio -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Service",
- "serviceType": "Psicotécnicos oficiales",
- "provider": {
-   "@type": "MedicalClinic",
-   "name": "Emedical Madrid",
-   "address": {
-     "@type": "PostalAddress",
-     "streetAddress": "Calle de la Mezquita 5",
-     "addressLocality": "Madrid",
-     "postalCode": "28041",
-     "addressCountry": "ES"
-   },
-   "telephone": "+34613000030"
- },
- "areaServed": "Madrid"
-}
-</script>
-
-<script defer src="https://cdn.overtracking.com/t/tkREjnXW14gJRuK7F/"></script>
-
-<script type="application/ld+json">
-{
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@type": "MedicalClinic",
+  "@id": "https://www.psicotecnicos-sanfermin.com/#clinic",
+  "name": "Psicotécnicos San Fermín - Emedical Madrid",
+  "image": "https://www.psicotecnicos-sanfermin.com/resources/logo-emedical.png",
+  "url": "https://www.psicotecnicos-sanfermin.com/",
+  "telephone": "+34 613 000 030",
+  "priceRange": "€",
+  "description": "Centro médico especializado en psicotécnicos oficiales en Madrid (San Fermín / Usera) para seguridad, armas, náutica, perros peligrosos y licencias de conducir.",
+  "medicalSpecialty": ["OccupationalMedicine", "Psychology"],
+  "additionalType": "https://schema.org/DrivingSchool",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle de la Mezquita 5",
+    "addressLocality": "Madrid",
+    "addressRegion": "Madrid",
+    "postalCode": "28041",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 40.367862,
+    "longitude": -3.696974
+  },
+  "openingHoursSpecification": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Inicio",
-      "item": "https://www.psicotecnicos-sanfermin.com/"
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "13:30"
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Psicotécnicos y certificados",
-      "item": "https://www.psicotecnicos-sanfermin.com/psicotecnicos.html"
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "16:00",
+      "closes": "20:30"
     }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/emedicalmadrid",
+    "https://www.facebook.com/emedicalmadrid"
   ]
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
