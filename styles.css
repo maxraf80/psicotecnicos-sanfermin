@@ -148,6 +148,13 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   transition: background-color 0.25s ease;
+  display: block;
+  /* Cambia a bloque para permitir centrado */
+  margin: 1em auto;
+  /* Elimina el 4.5em y centra automáticamente */
+  width: fit-content;
+  /* Evita que ocupe todo el ancho */
+  text-align: center;
 
 }
 
