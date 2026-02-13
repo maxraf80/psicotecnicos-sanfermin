@@ -1,234 +1,115 @@
-/* ============================================================
-🩺 Psicotecnicos San Fermin — Estilos principales optimizados
-Autor: Desyuno Web
-Última revisión: Febrero 2026
-============================================================ */
+<!DOCTYPE html>
+<html lang="es">
 
-/* 🔹 FUENTES LOCALES OPTIMIZADAS */
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicotécnicos San Fermín | Centro autorizado DGT M-0569</title>
 
-/* 🔹 RESETEO Y BASE */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  font-family: 'Poppins', Arial, sans-serif;
-  line-height: 1.6;
-  background: url('resources/ryoji-iwata-n31JPLu8_Pw-unsplash.jpg') center/cover fixed no-repeat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
+  <!-- SEO -->
+  <meta name="description"
+    content="En Psicotécnicos San Fermín, centro autorizado DGT M-0569, realizamos psicotécnicos oficiales para seguridad privada, armas, náutica y perros peligrosos (PPP). Atención rápida, profesional y con los mejores precios de Madrid.">
+  <meta name="keywords"
+    content="psicotécnicos Madrid, psicotécnicos DGT, certificado armas, seguridad privada, patrón de embarcación, perros peligrosos, PPP, Emedical">
+  <meta name="author" content="Desyunos Web Services">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.psicotecnicos-sanfermin.com/">
 
-/* 🔹 BOTÓN DE LLAMADA */
-.boton-llamar {
-  display: block;
-  margin: 1em auto;
-  padding: 10px 18px;
-  background-color: #e3a426;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: fit-content;
-  text-align: center;
-  transition: background-color 0.25s ease;
-}
-.boton-llamar:hover { background-color: #218838; }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Psicotécnicos San Fermín | Centro autorizado DGT M-0569">
+  <meta property="og:description"
+    content="Centro médico autorizado para psicotécnicos oficiales en Madrid. Atención rápida y profesional.">
+  <meta property="og:image" content="resources/logo-emedical.png">
+  <meta property="og:url" content="https://www.psicotecnicos-sanfermin.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Psicotécnicos San Fermín">
 
-/* 🔹 HEADER */
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.col-logo { margin: 20px 10px 0 0; }
-.col-logo img { max-width: 100%; height: auto; display: block; }
-.row { display: flex; flex-wrap: wrap; }
+  <!-- Favicon -->
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
 
-/* 🔹 MENÚ DE NAVEGACIÓN */
-.menu {
-  margin: 20px auto 0;
-  display: flex;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  padding: 6px 10px;
-  max-width: 100%;
-}
-.menu ul { display: flex; flex-direction: column; list-style: none; margin: 0; padding: 0; }
-.menu a {
-  text-decoration: underline;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  margin-bottom: 1em;
-  transition: background 0.2s ease-in-out;
-}
-.menu a:hover { background: #ddd; border-radius: 4px; color: #000; }
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
 
-/* 🔹 FOOTER */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #222;
-  color: #fff;
-  padding: 15px 10px;
-  margin-top: auto;
-  font-size: 0.85rem;
-  text-align: center;
-  width: 100%;
-}
-footer h3 { font-weight: 600; }
-footer a { color: #fff; text-decoration: underline; }
-footer .contacto p:nth-child(3),
-footer .contacto p:nth-child(4),
-footer .contacto p:nth-child(5) { text-decoration: underline; }
+  <!-- Google Fonts (fallback si no se cargan locales) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
 
-/* 🔹 TEXTO ENCABEZADO */
-.texto-encabezado {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #223366;
-  margin: 1.5em 0;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1em 2em;
-  border-radius: 12px;
-  border: 1px solid #0c0c0d;
-  display: inline-block;
-  box-shadow: 0 2px 12px rgba(34, 51, 102, 0.05);
-  letter-spacing: 0.3px;
-}
+<body>
 
-/* 🔹 FILAS Y COLUMNAS */
-.fila { display: flex; flex-wrap: wrap; padding: 20px; margin: 20px auto; max-width: 1200px; }
-.col-2 {
-  flex: 1;
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-}
-.col-2 h2 { font-size: 1.5rem; color: #333; margin-bottom: 0.8rem; }
-.col-2 h3 { font-size: 1.2rem; color: #444; margin: 1.2rem 0 0.8rem; }
-.col-2 p, .col-2 ul li { font-size: 1rem; line-height: 1.6; color: #555; margin-bottom: 1rem; }
-.col-2 ul { list-style: disc; padding-left: 20px; }
+  <!-- HEADER -->
+  <header class="header-container">
+    <div class="col-logo">
+      <a href="index.html">
+        <img src="resources/logo-emedical.png" alt="Psicotécnicos San Fermín - Emedical Madrid">
+      </a>
+    </div>
+    <div class="col-title">
+      <h1>Psicotécnicos San Fermín</h1>
+      <p class="texto-encabezado">Centro autorizado DGT M-0569 para psicotécnicos oficiales y certificados médicos
+        en Madrid.</p>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="psicotecnicos.html">Psicotécnicos y certificados</a></li>
+          <li><a href="citas.html">Pide una cita</a></li>
+        </ul>
+      </nav>
+      <a href="tel:613000030" class="boton-llamar">📞 Llámanos al 613 0000 30</a>
+    </div>
+  </header>
 
-/* 🔹 BOTONES FLOTANTES (WhatsApp y Telegram) */
-.wa-button, .tg-button {
-  position: fixed;
-  right: 10px;
-  width: 90px;
-  height: 90px;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  z-index: 999;
-}
-.wa-button img { width: 100%; height: auto; display: block; }
-.tg-button img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 3px solid #fff; /* borde blanco */
-  border-radius: 50%;     /* circular */
-  box-sizing: border-box;
-}
+  <!-- HERO -->
+  <section class="fila">
+    <div class="col-2">
+      <p>
+        En <strong>Psicotécnicos San Fermín</strong>, centro autorizado DGT M-0569, realizamos psicotécnicos oficiales 
+        para seguridad privada, licencias de armas, náutica y perros peligrosos (PPP). 
+        Atención rápida, profesional y con los mejores precios de la zona. 
+        Foto gratuita incluida y envío telemático a DGT.
+      </p>
+    </div>
+  </section>
 
-/* Posición vertical */
-.wa-button { bottom: 10px; }
-.tg-button { bottom: calc(10px + 90px + 10px); } /* encima de WhatsApp con separación */
+  <!-- SECCIÓN SERVICIOS DESTACADOS -->
+  <section class="fila">
+    <div class="col-2">
+      <h2>Servicios destacados</h2>
+      <ul>
+        <li>Vigilantes de Seguridad</li>
+        <li>Permisos de Armas</li>
+        <li>Patrón de Embarcación</li>
+        <li>Perros Potencialmente Peligrosos (PPP)</li>
+      </ul>
+      <a href="psicotecnicos.html" class="boton-llamar">Ver todos los servicios</a>
+    </div>
+  </section>
 
-/* Ajustes móviles */
-@media (max-width: 480px) {
-  .wa-button, .tg-button { width: 60px; height: 60px; right: 5px; }
-  .wa-button { bottom: 5px; }
-  .tg-button { bottom: calc(5px + 60px + 10px); }
-}
+  <!-- FOOTER -->
+  <footer id="contact" class="fila">
+    <div class="contacto">
+      <h3>Contacta con nosotros</h3>
+      <p>Teléfono: <a href="tel:+34613000030">+34 613 000 030</a></p>
+      <p><a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid" target="_blank"
+          rel="noopener noreferrer">Dirección: Calle de la Mezquita 5, 28041, Madrid</a></p>
+      <a class="wa-button wa-link" href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">
+        <img src="resources/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a class="tg-button" href="https://t.me/+34613000030" target="_blank" rel="noopener noreferrer">
+        <img src="resources/Telegram_logo.svg" alt="Telegram">
+      </a>
+    </div>
+  </footer>
 
-/* 🔹 DISCLAIMER */
-.disclaimer {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 12px 16px;
-  font-size: 0.85rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-.disclaimer a { color: #fff; text-decoration: underline; }
-@media (max-width: 480px) { .disclaimer { font-size: 0.8rem; padding: 10px 12px; } }
+  <!-- DISCLAIMER -->
+  <div class="disclaimer">
+    <p>Esta web cumple con el RGPD. Lee la <a href="privacidad.html">Política de Privacidad</a> y los 
+      <a href="aviso-legal.html">Avisos Legales</a>.
+    </p>
+  </div>
 
-/* 🔹 FORMULARIOS */
-.formulario {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #f9f9fb;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.formulario label { font-weight: 500; color: #333; }
-.formulario input, .formulario textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
-}
-.formulario input:focus, .formulario textarea:focus {
-  border-color: #0078d7;
-  box-shadow: 0 0 0 3px rgba(0, 120, 215, 0.2);
-  outline: none;
-}
-.formulario button {
-  background: #0078d7;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 8px;
-  padding: 12px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-.formulario button:hover { background: #005fa3; }
-.formulario .aviso {
-  font-size: 0.85rem;
-  color: #555;
-  text-align: center;
-}
-.formulario .aviso a {
-  color: #0078d7;
-  font-weight: 500;
-  text-decoration: none;
-}
-.formulario .aviso a:hover { text-decoration: underline; color: #005fa3; }
-
-/* 🔹 MEDIA QUERIES */
-@media (max-width: 480px) {
-  body { justify-content: center; align-items: center; }
-  .menu { width: 90%; text-align: center; }
-  .menu a { display: inline-block; }
-  .col-title h1, .col-title p { display: none; }
-}
-@media (min-width: 481px) { .col-title h1, .col-title p { display: block; } }
-@media (min-width: 1024px) {
-  header, footer { text-align: center; }
-  footer { margin-top: auto; width: 100%; }
-}
+</body>
+</html>
