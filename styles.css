@@ -23,7 +23,45 @@ body {
   display: flex;
   flex-direction: column;
   color: #333;
-  overflow-x: hidden; /* 🔥 evita desbordes en móvil */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* 🔹 BOTONES GENERALES (ARREGLA CENTRADO) */
+.boton-llamar,
+.boton {
+  display: inline-block;
+  margin: 16px auto;        /* ✅ centra con auto */
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+}
+
+/* Botón llamar */
+.boton-llamar {
+  background-color: #e3a426;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.25s ease;
+}
+.boton-llamar:hover { background-color: #218838; }
+
+/* Botón secundario tipo "Ver servicios" */
+.boton {
+  background: #0078d7;
+  color: #fff;
+  transition: background-color 0.25s ease;
+}
+.boton:hover { background: #005fa3; }
+
+/* ✅ Si el botón está dentro de un <p>, lo centramos igual */
+p .boton-llamar,
+p .boton {
+  display: inline-block;
 }
 
 /* 🔹 HEADER */
@@ -35,14 +73,10 @@ header {
 }
 
 .col-logo { margin: 20px 10px 0 0; }
+.col-logo img { max-width: 100%; height: auto; display: block; }
+.row { display: flex; flex-wrap: wrap; }
 
-.col-logo img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 🔹 MENÚ PRINCIPAL (AHORA EN NEGRITA Y SUBRAYADO) */
+/* 🔹 MENÚ PRINCIPAL (NEGRITA Y SUBRAYADO) */
 .menu {
   margin: 20px auto 0;
   display: flex;
@@ -50,6 +84,7 @@ header {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   padding: 8px 12px;
+  max-width: 100%;
 }
 
 .menu ul {
@@ -61,14 +96,12 @@ header {
   align-items: center;
 }
 
-.menu li {
-  margin: 6px 0;
-}
+.menu li { margin: 6px 0; }
 
 .menu a {
   color: #ffffff;
-  font-weight: 700;              /* 🔥 NEGRITA */
-  text-decoration: underline;    /* 🔥 SUBRAYADO */
+  font-weight: 700;              /* ✅ negrita */
+  text-decoration: underline;    /* ✅ subrayado */
   font-size: 1.15rem;
   padding: 6px 12px;
   transition: all 0.2s ease-in-out;
@@ -81,21 +114,19 @@ header {
   text-decoration: none;
 }
 
-/* 🔹 BOTÓN LLAMADA */
-.boton-llamar {
+/* 🔹 TEXTO ENCABEZADO */
+.texto-encabezado {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #223366;
+  margin: 1.2em 0;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1em 1.4em;
+  border-radius: 12px;
+  border: 1px solid #0c0c0d;
   display: inline-block;
-  margin: 1em auto;
-  padding: 10px 18px;
-  background-color: #e3a426;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 700;
-  transition: background-color 0.25s ease;
-}
-
-.boton-llamar:hover {
-  background-color: #218838;
+  box-shadow: 0 2px 12px rgba(34, 51, 102, 0.05);
 }
 
 /* 🔹 FILAS Y CONTENIDO */
@@ -115,19 +146,20 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.col-2 h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
+.col-2 h2 { font-size: 1.6rem; margin-bottom: 1rem; color:#333; }
+.col-2 h3 { font-size: 1.2rem; margin: 1.2rem 0 0.8rem; color:#444; }
+.col-2 p, .col-2 ul li { font-size: 1rem; margin-bottom: 0.8rem; color:#555; }
+.col-2 ul { padding-left: 20px; }
 
-.col-2 p,
-.col-2 ul li {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
+/* 🔹 LISTADOS CON LINKS SIN AZUL (SERVICIOS) */
+.servicios-destacados ul li a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
 }
-
-.col-2 ul {
-  padding-left: 20px;
+.servicios-destacados ul li a:hover {
+  color: #e3a426;
+  text-decoration: underline;
 }
 
 /* 🔹 FORMULARIOS */
@@ -143,14 +175,13 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.formulario input,
-.formulario textarea {
+.formulario label { font-weight: 500; color: #333; }
+.formulario input, .formulario textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 1rem;
 }
-
 .formulario button {
   background: #0078d7;
   color: #fff;
@@ -160,24 +191,28 @@ header {
   padding: 12px;
   cursor: pointer;
 }
+.formulario button:hover { background: #005fa3; }
 
-.formulario button:hover {
-  background: #005fa3;
+.formulario .aviso {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
 }
 
 /* 🔹 FOOTER */
 footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #222;
   color: #fff;
   padding: 15px 10px;
   margin-top: auto;
+  font-size: 0.85rem;
   text-align: center;
+  width: 100%;
 }
-
-footer a {
-  color: #fff;
-  text-decoration: underline;
-}
+footer a { color: #fff; text-decoration: underline; }
 
 /* 🔹 BOTONES FLOTANTES */
 .wa-button, .tg-button {
@@ -190,15 +225,11 @@ footer a {
   cursor: pointer;
   z-index: 999;
 }
-
 .wa-button { bottom: 10px; }
 .tg-button { bottom: 90px; }
 
-.wa-button img,
-.tg-button img {
-  width: 100%;
-  height: auto;
-}
+.wa-button img, .tg-button img { width: 100%; height: auto; display: block; }
+.tg-button img { border: 3px solid #fff; border-radius: 50%; box-sizing: border-box; }
 
 /* 🔹 DISCLAIMER */
 .disclaimer {
@@ -208,29 +239,12 @@ footer a {
   padding: 12px;
   font-size: 0.85rem;
 }
-
-.disclaimer a {
-  color: #fff;
-  text-decoration: underline;
-}
+.disclaimer a { color: #fff; text-decoration: underline; }
 
 /* 🔹 RESPONSIVE */
 @media (max-width: 480px) {
-
-  .menu ul {
-    flex-direction: column;
-  }
-
-  .menu a {
-    font-size: 1rem;
-  }
-
-  .wa-button, .tg-button {
-    width: 55px;
-    height: 55px;
-  }
-
-  .tg-button {
-    bottom: 75px;
-  }
+  .menu a { font-size: 1rem; }
+  .wa-button, .tg-button { width: 55px; height: 55px; right: 5px; }
+  .wa-button { bottom: 5px; }
+  .tg-button { bottom: 70px; }
 }
