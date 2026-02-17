@@ -9,10 +9,10 @@
 
   <!-- SEO -->
   <meta name="description"
-    content="En Psicotécnicos San Fermín, centro autorizado DGT M-0569, realizamos psicotécnicos oficiales para seguridad privada, licencias de armas, náutica, certificados deportivos y perros peligrosos (PPP). Atención rápida, profesional y con los mejores precios de la zona. Foto gratuita incluida y envío telemático a DGT.">
+    content="En Psicotécnicos San Fermín, centro autorizado DGT M-0569, realizamos psicotécnicos oficiales para seguridad privada, licencias de armas, náutica y perros peligrosos (PPP). Atención rápida, profesional y con los mejores precios de la zona. Foto gratuita incluida y envío telemático a DGT.">
 
   <meta name="keywords"
-    content="psicotécnicos San Fermín, psicotécnico Madrid, psicotécnico Usera, certificado armas, psicotécnico seguridad privada, psicotécnico náutica, certificado deportivo infantil, psicotécnico perros peligrosos, DGT M-0569">
+    content="psicotécnicos San Fermín, psicotécnico Madrid, psicotécnico Usera, certificado armas, psicotécnico seguridad privada, psicotécnico náutica, psicotécnico perros peligrosos, DGT M-0569">
 
   <meta name="author" content="Psicotécnicos San Fermín">
   <meta name="robots" content="index, follow">
@@ -22,16 +22,59 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Psicotécnicos San Fermín | Centro autorizado DGT M-0569 en Madrid">
   <meta property="og:description"
-    content="Psicotécnicos oficiales para seguridad privada, armas, náutica, certificados deportivos infantiles y PPP. Atención rápida y profesional.">
-  <meta property="og:image"
-    content="https://www.psicotecnicos-sanfermin.com/resources/logo-san-fermin.png">
-  <meta property="og:url"
-    content="https://www.psicotecnicos-sanfermin.com/">
+    content="Psicotécnicos oficiales para seguridad privada, armas, náutica y PPP. Atención rápida, profesional, con foto gratuita y envío telemático a DGT.">
+  <meta property="og:image" content="https://www.psicotecnicos-sanfermin.com/resources/logo-san-fermin.png">
+  <meta property="og:url" content="https://www.psicotecnicos-sanfermin.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Psicotécnicos San Fermín">
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.psicotecnicos-sanfermin.com/"}
+    ]
+  }
+  </script>
+
+  <!-- MedicalClinic -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "@id": "https://www.psicotecnicos-sanfermin.com/#clinic",
+    "name": "Psicotécnicos San Fermín",
+    "image": "https://www.psicotecnicos-sanfermin.com/resources/logo-san-fermin.png",
+    "url": "https://www.psicotecnicos-sanfermin.com/",
+    "telephone": "+34 613000030",
+    "priceRange": "€",
+    "description": "Centro autorizado DGT M-0569 especializado en psicotécnicos oficiales para seguridad privada, licencias de armas, náutica y perros potencialmente peligrosos.",
+    "medicalSpecialty": ["OccupationalMedicine", "Psychology"],
+    "additionalType": "https://schema.org/DrivingSchool",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle de la Mezquita 5",
+      "addressLocality": "Madrid",
+      "addressRegion": "Madrid",
+      "postalCode": "28041",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 40.367862,
+      "longitude": -3.696974
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"13:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"16:00","closes":"20:30"}
+    ]
+  }
+  </script>
 
 </head>
 
@@ -40,7 +83,7 @@
   <!-- HEADER -->
   <header class="header-container">
     <div class="col-logo">
-      <a href="/">
+      <a href="index.html">
         <img src="resources/logo-san-fermin.png" alt="Psicotécnicos San Fermín">
       </a>
     </div>
@@ -50,17 +93,15 @@
 
       <nav class="menu">
         <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/psicotecnicos.html">Psicotécnicos y Certificados</a></li>
-          <li><a href="/psicotecnico-usera.html">Psicotécnico Usera</a></li>
-          <li><a href="/pedir-cita-psicotecnico-madrid.html">Pedir Cita / FAQ</a></li>
-          <li><a href="/contacto.html">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="psicotecnicos.html">Psicotécnicos y Certificados</a></li>
+          <li><a href="psicotecnico-usera.html">Psicotécnico Usera</a></li>
+          <li><a href="pedir-cita-psicotecnico-madrid.html">Pedir Cita / FAQ</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
 
-      <a href="tel:613000030" class="boton-llamar">
-        📞 Llámanos al 613 000 030
-      </a>
+      <a href="tel:613000030" class="boton-llamar">📞 Llámanos al 613 000 030</a>
     </div>
   </header>
 
@@ -71,21 +112,40 @@
       <h2>Centro autorizado DGT M-0569 en Madrid</h2>
 
       <p>
-        En <strong>Psicotécnicos San Fermín</strong>, realizamos psicotécnicos oficiales
-        con envío telemático a DGT y fotografía gratuita incluida.
+        En <strong>Psicotécnicos San Fermín</strong>, centro autorizado DGT M-0569,
+        realizamos psicotécnicos oficiales para seguridad privada, licencias de armas,
+        náutica y perros potencialmente peligrosos (PPP).
+      </p>
+
+      <p>
+        Atención rápida y profesional, con los mejores precios de la zona,
+        fotografía gratuita incluida y envío telemático directo a la DGT.
       </p>
 
       <h2>Servicios destacados</h2>
-
       <ul>
-        <li><a href="/psicotecnico-seguridad-madrid.html">Vigilantes de Seguridad</a></li>
-        <li><a href="/psicotecnico-armas-madrid.html">Permisos de Armas</a></li>
-        <li><a href="/psicotecnico-nautica-madrid.html">Patrón de Embarcación</a></li>
-        <li><a href="/psicotecnico-perros-peligrosos-madrid.html">Perros Potencialmente Peligrosos (PPP)</a></li>
-        <li><a href="/certificado-medico-deportivo-madrid.html">Certificados deportivos para equipos infantiles</a></li>
+        <li><a href="psicotecnico-seguridad-madrid.html">Vigilantes de Seguridad</a></li>
+        <li><a href="psicotecnico-armas-madrid.html">Permisos de Armas</a></li>
+        <li><a href="psicotecnico-nautica-madrid.html">Patrón de Embarcación</a></li>
+        <li><a href="psicotecnico-perros-peligrosos-madrid.html">Perros Potencialmente Peligrosos (PPP)</a></li>
+        <li><a href="certificado-medico-deportivo-madrid.html">Certificados deportivos para equipos infantiles</a></li>
       </ul>
 
-      <a href="/pedir-cita-psicotecnico-madrid.html" class="boton-llamar">
+      <h2>Prueba psicotécnica rápida y profesional</h2>
+
+      <p>
+        Realizamos pruebas oficiales de coordinación y reflejos con equipamiento homologado
+        y gestión inmediata del trámite.
+      </p>
+
+      <img
+        src="resources/prueba-psicotecnica-coordinacion-madrid.png"
+        alt="Prueba psicotécnica de coordinación y reflejos en centro autorizado en Madrid"
+        style="width:100%; margin:20px 0; border-radius:8px;"
+        loading="lazy">
+
+      <!-- ✅ ENLACE CORRECTO EN GITHUB PAGES -->
+      <a href="pedir-cita-psicotecnico-madrid.html" class="boton-llamar">
         Solicitar cita ahora
       </a>
 
@@ -98,21 +158,29 @@
       <h3>Contacta con nosotros</h3>
       <p>Teléfono: <a href="tel:+34613000030">+34 613 000 030</a></p>
       <p>
-        <a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid"
-          target="_blank" rel="noopener noreferrer">
-          Calle de la Mezquita 5, 28041, Madrid
+        <a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid" target="_blank"
+          rel="noopener noreferrer">
+          Dirección: Calle de la Mezquita 5, 28041, Madrid
         </a>
       </p>
     </div>
+
+    <a class="wa-button wa-link" href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">
+      <img src="resources/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <a class="tg-button" href="https://t.me/34613000030" target="_blank" rel="noopener noreferrer">
+      <img src="resources/Telegram_logo.svg" alt="Telegram">
+    </a>
   </footer>
 
-  <div class="disclaimer">
+  <div class="disclaimer" role="contentinfo" aria-label="Aviso legal">
     <p>
-      Esta web cumple con el RGPD y no utiliza cookies.
-      Consulta nuestra <a href="privacidad.html">Política de Privacidad</a>
-      y <a href="aviso-legal.html">Aviso Legal</a>.
+      Esta web cumple con el RGPD y no utiliza cookies. Lee la <a href="privacidad.html">Política de Privacidad</a> y
+      los <a href="aviso-legal.html">Avisos Legales</a>.
     </p>
   </div>
 
 </body>
+
 </html>
