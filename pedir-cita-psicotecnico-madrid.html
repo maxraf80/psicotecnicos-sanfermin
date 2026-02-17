@@ -64,7 +64,7 @@
   }
   </script>
 
-  <!-- FAQPage -->
+  <!-- FAQPage (schema) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -106,6 +106,7 @@
   }
   </script>
 
+  <!-- Tracking -->
   <script defer src="https://cdn.overtracking.com/t/tkREjnXW14gJRuK7F/"></script>
 </head>
 
@@ -118,19 +119,23 @@
         <img src="resources/logo-san-fermin.png" alt="Psicotécnicos San Fermín">
       </a>
     </div>
+
     <div class="col-title">
       <h1>Psicotécnicos San Fermín</h1>
 
+      <!-- ✅ MENÚ: mantenemos la idea “Pedir cita” y el FAQ baja a un ancla -->
       <nav class="menu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="psicotecnicos.html">Psicotécnicos y certificados</a></li>
           <li><a href="psicotecnico-usera.html">Psicotécnico Usera</a></li>
-          <li><a href="pedir-cita-psicotecnico-madrid.html">Pedir cita / FAQ</a></li>
+          <li><a href="pedir-cita-psicotecnico-madrid.html">Pedir cita</a></li>
+          <li><a href="pedir-cita-psicotecnico-madrid.html#faq">FAQ</a></li>
         </ul>
       </nav>
 
-      <a href="tel:613000030" class="boton-llamar">📞 Llámanos al 613 000 030</a>
+      <!-- ✅ Evitamos desbordes en móvil: texto corto, href completo -->
+      <a href="tel:+34613000030" class="boton-llamar">📞 Llámanos al 613 000 030</a>
     </div>
   </header>
 
@@ -144,52 +149,70 @@
       <ul>
         <li>
           Llamada telefónica al
-          <a href="tel:+34613000030">+34 613 000 030</a>
+          <a href="tel:+34613000030">613 000 030</a>
         </li>
         <li>
           WhatsApp:
-          <a href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">+34 613 000 030</a>
+          <a href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">613 000 030</a>
         </li>
         <li>
           Telegram:
-          <a href="https://t.me/34613000030" target="_blank" rel="noopener noreferrer">+34 613 000 030</a>
+          <a href="https://t.me/34613000030" target="_blank" rel="noopener noreferrer">613 000 030</a>
         </li>
       </ul>
 
-      <section class="fila">
-        <div class="col-2">
-          <form class="formulario" action="https://formsubmit.co/hello@capitalistchic.com" method="POST">
-            <label>
-              Nombre *:
-              <input type="text" name="name" required>
-            </label>
+      <!-- ✅ ARREGLO DEL ANCHO (no uses .fila dentro de .col-2, crea overflow) -->
+      <div>
+        <form class="formulario" action="https://formsubmit.co/hello@capitalistchic.com" method="POST">
+          <label>
+            Nombre *:
+            <input type="text" name="name" required>
+          </label>
 
-            <label>
-              Teléfono *:
-              <input type="text" name="phone" required>
-            </label>
+          <label>
+            Teléfono *:
+            <input type="text" name="phone" required>
+          </label>
 
-            <label>
-              Email *:
-              <input type="email" name="email" required>
-            </label>
+          <label>
+            Email *:
+            <input type="email" name="email" required>
+          </label>
 
-            <label>
-              Información Adicional:
-              <textarea name="info" rows="4"></textarea>
-            </label>
+          <label>
+            Información Adicional:
+            <textarea name="info" rows="4"></textarea>
+          </label>
 
-            <button type="submit">Enviar</button>
+          <button type="submit">Enviar</button>
 
-            <p class="aviso">
-              Al enviar este formulario aceptas los términos de
-              <a href="privacidad.html"><u>Privacidad</u></a>.
-            </p>
+          <p class="aviso">
+            Al enviar este formulario aceptas los términos de
+            <a href="privacidad.html"><u>Privacidad</u></a>.
+          </p>
 
-            <input type="hidden" name="_next" value="thanks.html">
-            <input type="hidden" name="_captcha" value="false">
-          </form>
-        </div>
+          <input type="hidden" name="_next" value="thanks.html">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+
+      <!-- ✅ FAQ visible (ya tienes el schema, ahora lo ve el usuario) -->
+      <hr style="margin: 30px 0;">
+
+      <section id="faq">
+        <h2>Preguntas frecuentes</h2>
+
+        <h3>¿Cómo solicito una cita en Psicotécnicos San Fermín?</h3>
+        <p>Puedes solicitar tu cita a través del formulario web, por teléfono o mediante WhatsApp. Te atenderemos en nuestro centro autorizado DGT M-0569 en Madrid (Usera).</p>
+
+        <h3>¿Es necesario tener cita previa?</h3>
+        <p>No es obligatoria, pero recomendamos solicitar cita previa para agilizar la atención y evitar esperas.</p>
+
+        <h3>¿Puedo cambiar o cancelar mi cita?</h3>
+        <p>Sí, puedes contactar por teléfono o WhatsApp para modificar o cancelar tu cita.</p>
+
+        <h3>¿Cuánto cuesta el psicotécnico en Madrid?</h3>
+        <p>En Psicotécnicos San Fermín ofrecemos el precio más bajo de Madrid en certificados psicotécnicos oficiales, con atención profesional, rapidez, foto gratuita incluida y envío telemático.</p>
       </section>
 
     </div>
@@ -200,8 +223,11 @@
     <div class="contacto">
       <h3>Contacta con nosotros</h3>
       <p>Teléfono: <a href="tel:+34613000030">+34 613 000 030</a></p>
-      <p><a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid" target="_blank"
-          rel="noopener noreferrer">Dirección: Calle de la Mezquita 5, 28041, Madrid</a></p>
+      <p>
+        <a href="https://maps.google.com/?q=Calle+de+la+Mezquita+5,+28041,+Madrid" target="_blank" rel="noopener noreferrer">
+          Dirección: Calle de la Mezquita 5, 28041, Madrid
+        </a>
+      </p>
     </div>
 
     <a class="wa-button wa-link" href="https://wa.me/34613000030" target="_blank" rel="noopener noreferrer">
