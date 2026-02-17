@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicotécnico Seguridad | Psicotécnicos San Fermín</title>
+  <meta name="description" content="Psicotécnico oficial para vigilantes de seguridad en Madrid. Centro autorizado DGT M-0569. Atención rápida, profesional y con foto gratuita.">
+  <meta name="keywords" content="psicotécnico seguridad Madrid, vigilantes de seguridad, certificado seguridad, Psicotécnicos San Fermín">
+  <link rel="canonical" href="https://www.psicotecnicos-sanfermin.com/psicotecnico-seguridad-madrid">
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Psicotécnico Seguridad | Psicotécnicos San Fermín">
+  <meta property="og:description" content="Psicotécnico oficial para vigilantes de seguridad en Madrid. Centro autorizado DGT M-0569. Atención rápida y profesional con foto gratuita incluida.">
+  <meta property="og:image" content="https://www.psicotecnicos-sanfermin.com/resources/logo-emedical.png">
+  <meta property="og:url" content="https://www.psicotecnicos-sanfermin.com/psicotecnico-seguridad-madrid">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Psicotécnicos San Fermín">
+</head>
+
+
+
+
+<body>
+  <header class="header-container">
+    <div class="col-logo"><a href="/"><img src="resources/logo-emedical.png" alt="Psicotécnicos San Fermín"></a></div>
+    <div class="col-title">
+      <h1>Psicotécnico Seguridad</h1>
+      <div class="col-2">
+        <p>Realizamos psicotécnicos oficiales para vigilantes de seguridad. Foto gratuita y envío telemático a DGT.</p>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/psicotecnicos.html">Psicotécnicos y certificados</a></li>
+          <li><a href="/pedir-cita-psicotecnico-madrid">Pide una cita</a></li>
+          <li><a href="/faq-psicotecnicos-madrid">FAQ</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="tel:613000030" class="boton-llamar">📞 Llámanos al 613 000 030</a>
+    </div>
+  </header>
+
+  <section class="fila">
+    <div class="col-2">
+      <h2>Psicotécnico para Vigilantes de Seguridad</h2>
+      <ul>
+        <li>Certificados oficiales DGT</li>
+        <li>Evaluación médica y psicológica</li>
+        <li>Entrega inmediata del certificado</li>
+      </ul>
+      <a href="/pedir-cita-psicotecnico-madrid" class="boton">Solicitar cita</a>
+    </div>
+  </section>
+
+  <footer class="fila">
+    <div class="contacto">
+      <p>Teléfono: <a href="tel:+34613000030">+34 613 000 030</a></p>
+      <p>Dirección: Calle de la Mezquita 5, 28041, Madrid</p>
+    </div>
+  </footer>
+
+</body>
+</html>
