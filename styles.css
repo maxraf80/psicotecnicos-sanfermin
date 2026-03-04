@@ -4,13 +4,40 @@
 ============================================================ */
 
 /* 🔹 FUENTES LOCALES */
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
-@font-face { font-family: 'Poppins'; src: url('resources/Poppins/Poppins-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face {
+  font-family: 'Poppins';
+  src: url('resources/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('resources/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('resources/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* 🔹 RESET */
-*, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -29,21 +56,38 @@ body {
 }
 
 /* ✅ Evita que links largos rompan el layout */
-a, p, li, h1, h2, h3, h4, div, span {
+a,
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+div,
+span {
   overflow-wrap: anywhere;
   word-break: break-word;
 }
 
 /* 🔹 HEADER */
 header.header-container {
-  width: 100%;
+  width: 94%;
+  /* Deja un pequeño margen lateral en móviles para que respire */
+  max-width: 980px;
+  /* El mismo ancho máximo que tu caja de texto principal */
+  margin: 20px auto 0 auto;
+  /* Centra la cabecera en pantallas grandes */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 12px;
-  background: rgba(255, 255, 255, 0.9); /* Opcional: un fondo semi-transparente para que el logo y el texto destaquen sobre la imagen de fondo */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 25px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  /* Misma transparencia que la caja de texto */
+  border-radius: 12px;
+  /* Bordes redondeados a juego con el resto de la web */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
+  /* Misma sombra para dar efecto de flotación */
 }
 
 /* Logo */
@@ -51,7 +95,8 @@ header.header-container {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 15px; /* Separación con el título */
+  margin-bottom: 15px;
+  /* Separación con el título */
 }
 
 .col-logo a {
@@ -59,7 +104,8 @@ header.header-container {
 }
 
 .col-logo img {
-  max-width: 280px; /* Un poco más grande para que se vea bien */
+  max-width: 280px;
+  /* Un poco más grande para que se vea bien */
   width: 100%;
   height: auto;
   display: block;
@@ -104,12 +150,16 @@ header.header-container {
   align-items: center;
 }
 
-.menu li { margin: 6px 0; }
+.menu li {
+  margin: 6px 0;
+}
 
 .menu a {
   color: #fff;
-  font-weight: 700;              /* ✅ negrita */
-  text-decoration: underline;    /* ✅ subrayado */
+  font-weight: 700;
+  /* ✅ negrita */
+  text-decoration: underline;
+  /* ✅ subrayado */
   font-size: 1.1rem;
   padding: 6px 10px;
   transition: 0.2s ease-in-out;
@@ -133,41 +183,50 @@ header.header-container {
   text-align: center;
   text-decoration: none;
   width: fit-content;
-  max-width: 92vw; /* ✅ en móvil no puede pasarse */
+  max-width: 92vw;
+  /* ✅ en móvil no puede pasarse */
 }
 
 .boton-llamar {
   background: #e3a426;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
   transition: background-color 0.25s ease;
 }
-.boton-llamar:hover { background: #218838; }
+
+.boton-llamar:hover {
+  background: #218838;
+}
 
 .boton {
   background: #0078d7;
   color: #fff;
   transition: background-color 0.25s ease;
 }
-.boton:hover { background: #005fa3; }
+
+.boton:hover {
+  background: #005fa3;
+}
 
 /* 🔹 CONTENEDORES */
 .fila {
   width: 100%;
   max-width: 1200px;
   margin: 18px auto;
-  padding: 14px;            /* ✅ menos padding en móvil */
+  padding: 14px;
+  /* ✅ menos padding en móvil */
   display: flex;
-  justify-content: center;  /* ✅ centra el contenido */
+  justify-content: center;
+  /* ✅ centra el contenido */
 }
 
 .col-2 {
   width: 100%;
   max-width: 980px;
   padding: 25px;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
 }
 
 /* Imágenes siempre responsivas */
@@ -183,7 +242,10 @@ img {
   text-decoration: underline;
   transition: color 0.2s ease;
 }
-.servicios-destacados ul li a:hover { color: #0078d7; }
+
+.servicios-destacados ul li a:hover {
+  color: #0078d7;
+}
 
 /* 🔹 FORMULARIO (nada debe sobresalir) */
 .formulario {
@@ -193,10 +255,14 @@ img {
   padding: 18px;
   background: #f9f9fb;
   border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.10);
 }
 
-.formulario label { font-weight: 500; color: #333; display: block; }
+.formulario label {
+  font-weight: 500;
+  color: #333;
+  display: block;
+}
 
 .formulario input,
 .formulario textarea {
@@ -219,7 +285,10 @@ img {
   font-weight: 700;
   cursor: pointer;
 }
-.formulario button:hover { background: #005fa3; }
+
+.formulario button:hover {
+  background: #005fa3;
+}
 
 .formulario .aviso {
   font-size: 0.85rem;
@@ -236,7 +305,11 @@ footer {
   text-align: center;
   margin-top: auto;
 }
-footer a { color: #fff; text-decoration: underline; }
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 /* 🔹 DISCLAIMER */
 .disclaimer {
@@ -247,10 +320,15 @@ footer a { color: #fff; text-decoration: underline; }
   padding: 12px;
   font-size: 0.85rem;
 }
-.disclaimer a { color: #fff; text-decoration: underline; }
+
+.disclaimer a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 /* 🔹 BOTONES FLOTANTES (tamaño controlado) */
-.wa-button, .tg-button {
+.wa-button,
+.tg-button {
   position: fixed;
   right: 12px;
   width: 56px;
@@ -261,8 +339,13 @@ footer a { color: #fff; text-decoration: underline; }
   justify-content: center;
 }
 
-.wa-button { bottom: 12px; }
-.tg-button { bottom: 78px; }
+.wa-button {
+  bottom: 12px;
+}
+
+.tg-button {
+  bottom: 78px;
+}
 
 .wa-button img,
 .tg-button img {
@@ -280,14 +363,34 @@ footer a { color: #fff; text-decoration: underline; }
 }
 
 @media (max-width: 480px) {
-  .fila { padding: 10px; }
-  .col-2 { padding: 14px; }
-  .menu a { font-size: 1.02rem; }
-  .wa-button, .tg-button { width: 50px; height: 50px; right: 10px; }
-  .wa-button { bottom: 10px; }
-  .tg-button { bottom: 68px; }
-  
+  .fila {
+    padding: 10px;
+  }
+
+  .col-2 {
+    padding: 14px;
+  }
+
+  .menu a {
+    font-size: 1.02rem;
+  }
+
+  .wa-button,
+  .tg-button {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+  }
+
+  .wa-button {
+    bottom: 10px;
+  }
+
+  .tg-button {
+    bottom: 68px;
+  }
+
   .col-title h1 {
-      font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 }
