@@ -40,16 +40,49 @@ header.header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 12px;
+  justify-content: center;
+  padding: 20px 12px;
+  background: rgba(255, 255, 255, 0.9); /* Opcional: un fondo semi-transparente para que el logo y el texto destaquen sobre la imagen de fondo */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 /* Logo */
+.col-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px; /* Separación con el título */
+}
+
+.col-logo a {
+  display: inline-block;
+}
+
 .col-logo img {
-  max-width: 220px;
+  max-width: 280px; /* Un poco más grande para que se vea bien */
   width: 100%;
   height: auto;
   display: block;
 }
+
+.col-title {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.col-title h1 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  color: #223366;
+}
+
+.texto-encabezado {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
 
 /* 🔹 MENÚ */
 .menu {
@@ -131,7 +164,7 @@ header.header-container {
 .col-2 {
   width: 100%;
   max-width: 980px;
-  padding: 16px;
+  padding: 25px;
   background: rgba(255,255,255,0.95);
   border-radius: 12px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.10);
@@ -240,6 +273,12 @@ footer a { color: #fff; text-decoration: underline; }
 }
 
 /* 🔹 MÓVIL */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 480px) {
   .fila { padding: 10px; }
   .col-2 { padding: 14px; }
@@ -247,4 +286,8 @@ footer a { color: #fff; text-decoration: underline; }
   .wa-button, .tg-button { width: 50px; height: 50px; right: 10px; }
   .wa-button { bottom: 10px; }
   .tg-button { bottom: 68px; }
+  
+  .col-title h1 {
+      font-size: 1.6rem;
+  }
 }
